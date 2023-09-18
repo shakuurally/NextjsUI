@@ -27,18 +27,19 @@ export default function NavBar({ session }: { session: Session | null }) {
             <Image
               src="/logo.png"
               alt="Precedent logo"
-              width="30"
-              height="30"
+              width="40"
+              height="40"
               className="mr-2 rounded-sm"
             ></Image>
-            <p>Precedent</p>
+            <p>Gourmet</p>
           </Link>
           <div>
             {session ? (
               <UserDropdown session={session} />
             ) : (
               <button
-                className="rounded-full border border-black bg-black p-1.5 px-4 text-sm text-white transition-all hover:bg-white hover:text-black"
+                className="rounded-lg border border-[#a89b32] p-1.5 px-4 text-sm
+                 bg-[#a89b32] text-white transition-all hover:bg-white hover:text-black"
                 onClick={() => setShowSignInModal(true)}
               >
                 Sign In

@@ -1,23 +1,23 @@
 import Card from "@/components/home/card";
 import Balancer from "react-wrap-balancer";
 import { DEPLOY_URL } from "@/lib/constants";
-import { Github, Twitter } from "@/components/shared/icons";
+import { Github } from "@/components/shared/icons";
 import WebVitals from "@/components/home/web-vitals";
 import ComponentGrid from "@/components/home/component-grid";
 import Image from "next/image";
-import { nFormatter } from "@/lib/utils";
 
 export default async function Home() {
 
 
   return (
     <>
-      <div className="z-10 w-full max-w-xl px-5 xl:px-0">
+      <div className="z-10 w-full  max-w-xl px-5 xl:px-0">
 
         <h1
           className="animate-fade-up bg-gradient-to-br from-black to-stone-500 bg-clip-text text-center font-display text-4xl font-bold tracking-[-0.02em] text-transparent opacity-0 drop-shadow-sm md:text-7xl md:leading-[5rem]"
           style={{ animationDelay: "0.15s", animationFillMode: "forwards" }}
         >
+
           <Balancer>Building blocks for your Next project</Balancer>
         </h1>
         <p
@@ -123,7 +123,6 @@ const features = [
     demo: (
       <div className="flex items-center justify-center space-x-20">
         <Image alt="Auth.js logo" src="/authjs.webp" width={50} height={50} />
-        <Image alt="Prisma logo" src="/prisma.svg" width={50} height={50} />
       </div>
     ),
   },
